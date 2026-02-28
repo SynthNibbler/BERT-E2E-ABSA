@@ -1,3 +1,7 @@
 runs/
 cache/
 pycache/
+pycache/
+bert-linear-laptop14-finetune/
+data/**/cached_*
+**/__pycache__/
