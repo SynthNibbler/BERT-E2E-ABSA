@@ -3,6 +3,7 @@ import os
 import torch
 import numpy as np
 
+# compute_metrics_absa will compute the F1 scores
 from glue_utils import convert_examples_to_seq_features, compute_metrics_absa, ABSAProcessor
 from tqdm import tqdm
 from transformers import BertConfig, BertTokenizer, XLNetConfig, XLNetTokenizer, WEIGHTS_NAME
@@ -125,12 +126,16 @@ def main():
 
 
 def predict(args, model, tokenizer):
+    #prepare data to be read by model and output to be human readable
+    #evaluate_label_ids index mapping to line up predictions to the real words
     dataset, evaluate_label_ids, total_words = load_and_cache_examples(args, args.task_name, tokenizer)
     sampler = SequentialSampler(dataset)
+
     # process the incoming data one by one
     dataloader = DataLoader(dataset, sampler=sampler, batch_size=1)
     print("***** Running prediction *****")
 
+    #setup for metrics to be calculated
     total_preds, gold_labels = None, None
     idx = 0
     if args.tagging_schema == 'BIEOS':
@@ -157,11 +162,11 @@ def predict(args, model, tokenizer):
                       'token_type_ids': batch[2] if args.model_type in ['bert', 'xlnet'] else None,
                       # XLM don't use segment_ids
                       'labels': batch[3]}
-            outputs = model(**inputs)
+            outputs = model(**inputs) #send tokenized sentence into ABSA trained model
             # logits: (1, seq_len, label_size)
-            logits = outputs[1]
+            logits = outputs[1] #scoring per token table
             # preds: (1, seq_len)
-            if model.tagger_config.absa_type != 'crf':
+            if model.tagger_config.absa_type != 'crf': #For CRF output layer, not linear model
                 preds = np.argmax(logits.detach().cpu().numpy(), axis=-1)
             else:
                 mask = batch[1]
@@ -186,13 +191,35 @@ def predict(args, model, tokenizer):
                 aspect = words[beg:end+1]
                 output_ts.append('%s: %s' % (aspect, sentiment))
             print("Input: %s, output: %s" % (' '.join(words), '\t'.join(output_ts)))
+
+            # Edited here to accumulate all the predictions into one set
+            # Aligned with axis =0 to match gold_labels
+            if total_preds is None:
+                total_preds = preds #set array after first batch
+            else:
+                total_preds = np.append(total_preds, preds, axis=0) #append following batches
             if inputs['labels'] is not None:
                 # for the unseen data, there is no ``labels''
                 if gold_labels is None:
                     gold_labels = inputs['labels'].detach().cpu().numpy()
                 else:
+                    #convert and append
                     gold_labels = np.append(gold_labels, inputs['labels'].detach().cpu().numpy(), axis=0)
         idx += 1
+
+    #only compute if both sets are filled
+    if total_preds is not None and gold_labels is not None:
+        #calculate the F1 based on same function used in training for a consistant readout
+        scores = compute_metrics_absa(total_preds, gold_labels, evaluate_label_ids, args.tagging_schema)
+        ####
+        # class_count[POS. NEG. NEU]
+        # Metrics for print as follows:
+        # ---
+        # macro --> accuracy over all for each class, POS bias matters
+        # precision --> % == correct pred/total pred
+        # recall --> % == gold_labels correctly found / total gold_labels in set
+        # micro-f1 -->
+        print(scores)
 
 
 if __name__ == "__main__":

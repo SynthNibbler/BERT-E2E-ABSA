@@ -1,0 +1,25 @@
+Set up was easy.####Set=T-POS up=T-POS was=O easy=O .=O
+excellent in every way.####excellent=O in=O every=O way=O .=O
+No installation disk (DVD) is included.####No=O installation=T-NEU disk=T-NEU (DVD)=T-NEU is=O included=O .=O
+It's fast, light, and simple to use.####It=O 's=O fast=O ,=O light=O ,=O and=O simple=O to=O use=T-POS .=O
+Works well, and I am extremely happy to be back to an apple OS.####Works=T-POS well=O ,=O and=O I=O am=O extremely=O happy=O to=O be=O back=O to=O an=O apple=T-POS OS=T-POS .=O
+This mac has been a problem since we got it.####This=O mac=O has=O been=O a=O problem=O since=O we=O got=O it=O .=O
+I am pleased with the fast log on, speedy WiFi connection and the long battery life (>6 hrs).####I=O am=O pleased=O with=O the=O fast=O log=T-POS on=T-POS ,=O speedy=O WiFi=T-POS connection=T-POS and=O the=O long=O battery=T-POS life=T-POS >=O 6=O hrs=O .=O
+The Apple engineers have not yet discovered the delete key.####The=O Apple=O engineers=O have=O not=O yet=O discovered=O the=O delete=T-NEG key=T-NEG .=O
+Made interneting (part of my business) very difficult to maintain.####Made=O interneting=T-NEG part=O of=O my=O business=O very=O difficult=O to=O maintain=O .=O
+Luckily, for all of us contemplating the decision, the Mac Mini is priced just right.####Luckily=O ,=O for=O all=O of=O us=O contemplating=O the=O decision=O ,=O the=O Mac=O Mini=O is=O priced=T-POS just=O right=O .=O
+Small and still VERY powerful.####Small=O and=O still=O VERY=O powerful=O .=O
+I had gotten this model for  $1199.00 on my State's tax-free weekend and had a $100 off coupon for a MacBook at the local BestBuy!####I=O had=O gotten=O this=O model=O for=O $=O 119900=O on=O my=O State=O 's=O tax-free=O weekend=O and=O had=O a=O $=O 100=O off=O coupon=O for=O a=O MacBook=O at=O the=O local=O BestBuy=O !=O .=O
+Super light, super sexy and everything just works.####Super=O light=O ,=O super=O sexy=O and=O everything=O just=O works=T-POS .=O
+And if you are switching from a pc I hilghy sugest this one.####And=O if=O you=O are=O switching=O from=O a=O pc=O I=O hilghy=O sugest=O this=O one=O .=O
+It is super fast and has outstanding graphics.####It=O is=O super=O fast=O and=O has=O outstanding=O graphics=T-POS .=O
+Strong build though which really adds to its durability.####Strong=O build=T-POS though=O which=O really=O adds=O to=O its=O durability=T-POS .=O
+The battery life is excellent- 6-7 hours without charging.####The=O battery=T-POS life=T-POS is=O excellent=O 6-7=O hours=O without=O charging=O .=O
+I enjoy having apple products.####I=O enjoy=O having=O apple=O products=O .=O
+I've had my computer for 2 weeks already and it works perfectly.####I=O 've=O had=O my=O computer=O for=O 2=O weeks=O already=O and=O it=O works=T-POS perfectly=O .=O
+I will never go back to a PC again!####I=O will=O never=O go=O back=O to=O a=O PC=O again=O !=O
+And I may be the only one but I am really liking Windows 8.####And=O I=O may=O be=O the=O only=O one=O but=O I=O am=O really=O liking=O Windows=T-POS 8=T-POS .=O
+The baterry is very longer.####The=O baterry=T-POS is=O very=O longer=O .=O
+And it's so quiet that I don't hear it at all.####And=O it=O 's=O so=O quiet=O that=O I=O do=O n't=O hear=O it=O at=O all=O .=O
+Its size is ideal and the weight is acceptable.####Its=O size=T-POS is=O ideal=O and=O the=O weight=T-POS is=O acceptable=O .=O
+To me it's a workhorse... and quiet as can be... you even save big bucks not dishing out any extra to Uncle Sam... Definite Buy...####To=O me=O it=O 's=O a=O workhorse=O and=O quiet=O as=O can=O be=O you=O even=O save=O big=O bucks=O not=O dishing=O out=O any=O extra=O to=O Uncle=O Sam=O Definite=O Buy=O .=O

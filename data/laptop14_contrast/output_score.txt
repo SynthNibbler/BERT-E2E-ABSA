@@ -1,0 +1,28 @@
+Load checkpoint ./bert-linear-laptop14-finetune/checkpoint-1500/pytorch_model.bin...
+test class count: [ 6. 13.  4.]
+maximal sequence length is 44
+***** Running prediction *****
+Input: Sure it 's not light and slim but the features make up for it 100 % ., output: ['features']: POS
+Input: I know Apples are more expensive than PCs , but he thinks it is worth every penny ., output: 
+Input: It 's not inexpensive but the Hardware performance is impressive for a computer this small ., output: ['Hardware', 'performance']: POS
+Input: The price is higher than most lab top out there ; however , he/she will get what they paid for , which is a great computer ., output: ['price']: NEG
+Input: The investment of a new MacBook Pro came at a price , but totally worth it for a good piece of mind ., output: ['price']: POS
+Input: I bought this MacBook Pro to replace my six-year-old PC a Sony Vaio , but it was basically no better than my old PC , so I returned it ., output: 
+Input: Yes , that 's a good thing , but it 's made from aluminum that scratches easily ., output: 
+Input: Though please note that sometimes it crashes , and the sound quality isnt superb ., output: ['sound', 'quality']: NEG
+Input: I had a little problem adjusting to the small screen but works fine as long as I remember to carry my glasses ., output: ['small', 'screen']: NEU
+Input: My wife was so excited to open the box , but quickly came to see that it did not function as it should ., output: 
+Input: I like coming back to Mac OS but this laptop is lacking in speaker quality compared to my $ 400 old HP laptop ., output: ['Mac', 'OS']: POS	['speaker', 'quality']: NEG
+Input: The SD card reader is slightly recessed and upside down the nail slot on the card can not be accessed , if this was a self ejecting slot this would not be an issue , but its not ., output: ['SD', 'card', 'reader']: NEG	['nail', 'slot']: NEG	['card']: NEU
+Input: I was concerned that the downgrade to the regular hard drive would make it unacceptably slow but I need not have worried , this machine is the fastest I have ever owned ., output: ['hard', 'drive']: NEU
+Input: The power plug has to be connected to the power adaptor to charge the battery but wo n't stay connected ., output: ['power', 'plug']: NEG	['power', 'adaptor']: NEG	['battery']: NEG
+Input: The speakers could have been better but it was n't a deal breaker this is a great little laptop love it ! ., output: ['speakers']: NEG
+Input: The sound as mentioned earlier is n't the best , but it can be solved with headphones ., output: ['sound']: NEG
+Input: The track pad is a bit squirrely at times sometimes too sensitive , and sometimes a bit unresponsive , but it 's usable ., output: ['track', 'pad']: NEG
+Input: I was considering buying the Air , but in reality , this one has a more powerful performance and seems much more convenient , even though it 's about 20 inch thicker and 2 lbs heavier ., output: ['performance']: POS
+Input: The case is now slightly larger than the previous generation , but the lack of an external power supply justifies the small increase in size ., output: ['case']: NEG	['external', 'power', 'supply']: NEG	['size']: NEG
+Input: air has higher resolution but the fonts are small ., output: ['air']: POS	['resolution']: POS	['fonts']: NEG
+Input: But with this laptop , the bass is very weak and the sound comes out sound tinny ., output: ['bass']: NEG	['sound']: NEG
+Input: I do admit it is pricey but the saying is really true with this MacBook Pro Laptop You get what you pay for ., output: 
+class_count: [ 6. 13.  4.]
+{'macro-f1': 0.4341499684513786, 'precision': 0.4814796982233399, 'recall': 0.5652149338481137, 'micro-f1': 0.5199482447516768}

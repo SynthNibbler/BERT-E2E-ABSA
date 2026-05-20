@@ -1,0 +1,31 @@
+Load checkpoint ./bert-linear-laptop14-finetune/checkpoint-1500/pytorch_model.bin...
+cached_features_file: ./data/laptop_non-contrast/cached_test_bert-base-uncased_128_laptop_non-contrast
+test class count: [18.  2.  1.]
+***** Running prediction *****
+Input: Set up was easy ., output: ['Set', 'up']: POS
+Input: excellent in every way ., output: 
+Input: No installation disk (DVD) is included ., output: 
+Input: It 's fast , light , and simple to use ., output: ['use']: POS
+Input: Works well , and I am extremely happy to be back to an apple OS ., output: ['Works']: POS
+Input: This mac has been a problem since we got it ., output: 
+Input: I am pleased with the fast log on , speedy WiFi connection and the long battery life > 6 hrs ., output: ['WiFi']: POS	['log', 'on', ',', 'speedy', 'WiFi', 'connection']: POS	['battery', 'life']: POS
+Input: The Apple engineers have not yet discovered the delete key ., output: ['Apple', 'engineers']: NEG	['delete', 'key']: NEG
+Input: Made interneting part of my business very difficult to maintain ., output: ['interneting']: NEG
+Input: Luckily , for all of us contemplating the decision , the Mac Mini is priced just right ., output: ['priced']: POS
+Input: Small and still VERY powerful ., output: 
+Input: I had gotten this model for $ 119900 on my State 's tax-free weekend and had a $ 100 off coupon for a MacBook at the local BestBuy ! ., output: 
+Input: Super light , super sexy and everything just works ., output: 
+Input: And if you are switching from a pc I hilghy sugest this one ., output: 
+Input: It is super fast and has outstanding graphics ., output: ['graphics']: POS
+Input: Strong build though which really adds to its durability ., output: ['build']: POS	['durability']: POS
+Input: The battery life is excellent 6-7 hours without charging ., output: ['battery', 'life']: POS	['charging']: NEG
+Input: I enjoy having apple products ., output: 
+Input: I 've had my computer for 2 weeks already and it works perfectly ., output: ['works']: POS
+Input: I will never go back to a PC again !, output: 
+Input: And I may be the only one but I am really liking Windows 8 ., output: ['Windows', '8']: POS
+Input: The baterry is very longer ., output: 
+Input: And it 's so quiet that I do n't hear it at all ., output: 
+Input: Its size is ideal and the weight is acceptable ., output: ['size']: POS	['weight']: POS
+Input: To me it 's a workhorse and quiet as can be you even save big bucks not dishing out any extra to Uncle Sam Definite Buy ., output: 
+class_count: [18.  2.  1.]
+{'macro-f1': 0.4848081441856164, 'precision': 0.7894695291077416, 'recall': 0.7142823129413669, 'micro-f1': 0.7499463783339836}
